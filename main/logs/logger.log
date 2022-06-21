@@ -1,0 +1,160 @@
+2022-06-21 18:52:28,467 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - Starting PriceMonitoringApplicationTests using Java 11.0.8-internal on LAPTOP-8AJ7FB1K with PID 33272 (started by fejre in C:\Natasha\java\Senla\price-monitoring\main)
+2022-06-21 18:52:28,468 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 18:52:28,495 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext   - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6974a715
+2022-06-21 18:52:29,278 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-21 18:52:29,346 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 10 JPA repository interfaces.
+2022-06-21 18:52:29,897 [main] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Starting...
+2022-06-21 18:52:30,330 [main] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Start completed.
+2022-06-21 18:52:31,401 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 18:52:32,541 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-21 18:52:32,809 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 41 mappings in 'requestMappingHandlerMapping'
+2022-06-21 18:52:33,350 [main] DEBUG o.s.w.s.handler.SimpleUrlHandlerMapping  - Patterns [/swagger-ui*/**] in 'resourceHandlerMapping'
+2022-06-21 18:52:33,428 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 18:52:33,481 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 18:52:33,994 [main] INFO  o.s.s.web.DefaultSecurityFilterChain     - Will not secure any request
+2022-06-21 18:52:34,051 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-21 18:52:34,099 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - Started PriceMonitoringApplicationTests in 5.923 seconds (JVM running for 6.856)
+2022-06-21 18:52:34,201 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext   - Closing org.springframework.web.context.support.GenericWebApplicationContext@6974a715, started on Tue Jun 21 18:52:28 IST 2022
+2022-06-21 18:52:34,207 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 18:52:34,210 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Shutdown initiated...
+2022-06-21 18:52:34,220 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Shutdown completed.
+2022-06-21 18:54:00,110 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - Starting PriceMonitoringApplicationTests using Java 11.0.8-internal on LAPTOP-8AJ7FB1K with PID 39084 (started by fejre in C:\Natasha\java\Senla\price-monitoring\main)
+2022-06-21 18:54:00,112 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 18:54:00,148 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext   - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@9ec531
+2022-06-21 18:54:01,064 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-21 18:54:01,156 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 10 JPA repository interfaces.
+2022-06-21 18:54:01,833 [main] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Starting...
+2022-06-21 18:54:02,344 [main] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Start completed.
+2022-06-21 18:54:03,796 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 18:54:04,959 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-21 18:54:05,311 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 41 mappings in 'requestMappingHandlerMapping'
+2022-06-21 18:54:05,894 [main] DEBUG o.s.w.s.handler.SimpleUrlHandlerMapping  - Patterns [/swagger-ui*/**] in 'resourceHandlerMapping'
+2022-06-21 18:54:05,984 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 18:54:06,042 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 18:54:06,829 [main] INFO  o.s.s.web.DefaultSecurityFilterChain     - Will not secure any request
+2022-06-21 18:54:06,902 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-21 18:54:06,967 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - Started PriceMonitoringApplicationTests in 7.215 seconds (JVM running for 8.368)
+2022-06-21 18:54:07,097 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext   - Closing org.springframework.web.context.support.GenericWebApplicationContext@9ec531, started on Tue Jun 21 18:54:00 IST 2022
+2022-06-21 18:54:07,106 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 18:54:07,109 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Shutdown initiated...
+2022-06-21 18:54:07,122 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Shutdown completed.
+2022-06-21 20:17:49,249 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - Starting PriceMonitoringApplicationTests using Java 11.0.8-internal on LAPTOP-8AJ7FB1K with PID 19188 (started by fejre in C:\Natasha\java\Senla\price-monitoring\main)
+2022-06-21 20:17:49,250 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 20:17:49,280 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext   - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@9ec531
+2022-06-21 20:17:50,029 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-21 20:17:50,104 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 10 JPA repository interfaces.
+2022-06-21 20:17:50,656 [main] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Starting...
+2022-06-21 20:17:51,098 [main] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Start completed.
+2022-06-21 20:17:52,147 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 20:17:53,158 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-21 20:17:53,426 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 41 mappings in 'requestMappingHandlerMapping'
+2022-06-21 20:17:53,863 [main] DEBUG o.s.w.s.handler.SimpleUrlHandlerMapping  - Patterns [/swagger-ui*/**] in 'resourceHandlerMapping'
+2022-06-21 20:17:53,955 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 20:17:54,002 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 20:17:54,493 [main] INFO  o.s.s.web.DefaultSecurityFilterChain     - Will not secure any request
+2022-06-21 20:17:54,552 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-21 20:17:54,599 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - Started PriceMonitoringApplicationTests in 5.653 seconds (JVM running for 6.606)
+2022-06-21 20:17:54,702 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext   - Closing org.springframework.web.context.support.GenericWebApplicationContext@9ec531, started on Tue Jun 21 20:17:49 IST 2022
+2022-06-21 20:17:54,710 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 20:17:54,713 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Shutdown initiated...
+2022-06-21 20:17:54,722 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Shutdown completed.
+2022-06-21 20:34:39,950 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - Starting PriceMonitoringApplicationTests using Java 11.0.8-internal on LAPTOP-8AJ7FB1K with PID 40212 (started by fejre in C:\Natasha\java\Senla\price-monitoring\main)
+2022-06-21 20:34:39,951 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 20:34:39,984 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext   - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@9ec531
+2022-06-21 20:34:40,930 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-21 20:34:41,008 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 10 JPA repository interfaces.
+2022-06-21 20:34:41,646 [main] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Starting...
+2022-06-21 20:34:42,164 [main] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Start completed.
+2022-06-21 20:34:43,271 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 20:34:44,289 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-21 20:34:44,579 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 41 mappings in 'requestMappingHandlerMapping'
+2022-06-21 20:34:45,032 [main] DEBUG o.s.w.s.handler.SimpleUrlHandlerMapping  - Patterns [/swagger-ui*/**] in 'resourceHandlerMapping'
+2022-06-21 20:34:45,105 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 20:34:45,157 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 20:34:45,750 [main] INFO  o.s.s.web.DefaultSecurityFilterChain     - Will not secure any request
+2022-06-21 20:34:45,807 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-21 20:34:45,855 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - Started PriceMonitoringApplicationTests in 6.193 seconds (JVM running for 7.113)
+2022-06-21 20:34:45,962 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext   - Closing org.springframework.web.context.support.GenericWebApplicationContext@9ec531, started on Tue Jun 21 20:34:39 IST 2022
+2022-06-21 20:34:45,970 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 20:34:45,974 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Shutdown initiated...
+2022-06-21 20:34:45,985 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Shutdown completed.
+2022-06-21 20:40:54,552 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - Starting PriceMonitoringApplicationTests using Java 11.0.8-internal on LAPTOP-8AJ7FB1K with PID 41016 (started by fejre in C:\Natasha\java\Senla\price-monitoring\main)
+2022-06-21 20:40:54,553 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 20:40:54,580 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext   - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@9ec531
+2022-06-21 20:40:55,440 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-21 20:40:55,516 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 10 JPA repository interfaces.
+2022-06-21 20:40:56,137 [main] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Starting...
+2022-06-21 20:40:56,604 [main] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Start completed.
+2022-06-21 20:40:57,855 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 20:40:59,047 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-21 20:40:59,426 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 41 mappings in 'requestMappingHandlerMapping'
+2022-06-21 20:40:59,923 [main] DEBUG o.s.w.s.handler.SimpleUrlHandlerMapping  - Patterns [/swagger-ui*/**] in 'resourceHandlerMapping'
+2022-06-21 20:40:59,993 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 20:41:00,061 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 20:41:00,827 [main] INFO  o.s.s.web.DefaultSecurityFilterChain     - Will not secure any request
+2022-06-21 20:41:00,903 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-21 20:41:00,953 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - Started PriceMonitoringApplicationTests in 6.699 seconds (JVM running for 7.659)
+2022-06-21 20:41:01,078 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext   - Closing org.springframework.web.context.support.GenericWebApplicationContext@9ec531, started on Tue Jun 21 20:40:54 IST 2022
+2022-06-21 20:41:01,084 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 20:41:01,088 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Shutdown initiated...
+2022-06-21 20:41:01,100 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Shutdown completed.
+2022-06-21 22:11:37,858 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - Starting PriceMonitoringApplicationTests using Java 11.0.8-internal on LAPTOP-8AJ7FB1K with PID 43140 (started by fejre in C:\Natasha\java\Senla\price-monitoring\main)
+2022-06-21 22:11:37,859 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 22:11:37,884 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext   - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@9ec531
+2022-06-21 22:11:38,629 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-21 22:11:38,700 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 10 JPA repository interfaces.
+2022-06-21 22:11:39,304 [main] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Starting...
+2022-06-21 22:11:39,849 [main] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Start completed.
+2022-06-21 22:11:41,118 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 22:11:42,160 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-21 22:11:42,457 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 41 mappings in 'requestMappingHandlerMapping'
+2022-06-21 22:11:42,896 [main] DEBUG o.s.w.s.handler.SimpleUrlHandlerMapping  - Patterns [/swagger-ui*/**] in 'resourceHandlerMapping'
+2022-06-21 22:11:42,984 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 22:11:43,041 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 22:11:43,607 [main] INFO  o.s.s.web.DefaultSecurityFilterChain     - Will not secure any request
+2022-06-21 22:11:43,662 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-21 22:11:43,712 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - Started PriceMonitoringApplicationTests in 6.133 seconds (JVM running for 7.062)
+2022-06-21 22:11:43,827 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext   - Closing org.springframework.web.context.support.GenericWebApplicationContext@9ec531, started on Tue Jun 21 22:11:37 IST 2022
+2022-06-21 22:11:43,835 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 22:11:43,839 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Shutdown initiated...
+2022-06-21 22:11:43,849 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Shutdown completed.
+2022-06-21 22:13:31,318 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - Starting PriceMonitoringApplicationTests using Java 11.0.8-internal on LAPTOP-8AJ7FB1K with PID 38444 (started by fejre in C:\Natasha\java\Senla\price-monitoring\main)
+2022-06-21 22:13:31,320 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 22:13:31,349 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext   - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@9ec531
+2022-06-21 22:13:32,160 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-21 22:13:32,237 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 10 JPA repository interfaces.
+2022-06-21 22:13:32,920 [main] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Starting...
+2022-06-21 22:13:33,444 [main] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Start completed.
+2022-06-21 22:13:34,756 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 22:13:35,862 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-21 22:13:36,192 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 41 mappings in 'requestMappingHandlerMapping'
+2022-06-21 22:13:36,654 [main] DEBUG o.s.w.s.handler.SimpleUrlHandlerMapping  - Patterns [/swagger-ui*/**] in 'resourceHandlerMapping'
+2022-06-21 22:13:36,749 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 22:13:36,802 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 22:13:37,358 [main] INFO  o.s.s.web.DefaultSecurityFilterChain     - Will not secure any request
+2022-06-21 22:13:37,423 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-21 22:13:37,482 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - Started PriceMonitoringApplicationTests in 6.501 seconds (JVM running for 7.547)
+2022-06-21 22:13:37,610 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext   - Closing org.springframework.web.context.support.GenericWebApplicationContext@9ec531, started on Tue Jun 21 22:13:31 IST 2022
+2022-06-21 22:13:37,616 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 22:13:37,620 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Shutdown initiated...
+2022-06-21 22:13:37,632 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Shutdown completed.
+2022-06-21 22:16:20,867 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - Starting PriceMonitoringApplicationTests using Java 11.0.8-internal on LAPTOP-8AJ7FB1K with PID 44620 (started by fejre in C:\Natasha\java\Senla\price-monitoring\main)
+2022-06-21 22:16:20,868 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 22:16:20,898 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext   - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@9ec531
+2022-06-21 22:16:21,738 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-21 22:16:21,832 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 10 JPA repository interfaces.
+2022-06-21 22:16:22,465 [main] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Starting...
+2022-06-21 22:16:22,987 [main] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Start completed.
+2022-06-21 22:16:24,163 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 22:16:25,350 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-21 22:16:25,679 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 41 mappings in 'requestMappingHandlerMapping'
+2022-06-21 22:16:26,212 [main] DEBUG o.s.w.s.handler.SimpleUrlHandlerMapping  - Patterns [/swagger-ui*/**] in 'resourceHandlerMapping'
+2022-06-21 22:16:26,299 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 22:16:26,356 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 22:16:26,965 [main] INFO  o.s.s.web.DefaultSecurityFilterChain     - Will not secure any request
+2022-06-21 22:16:27,037 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-21 22:16:27,094 [main] INFO  b.s.t.b.p.PriceMonitoringApplicationTests - Started PriceMonitoringApplicationTests in 6.563 seconds (JVM running for 7.659)
+2022-06-21 22:16:27,219 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext   - Closing org.springframework.web.context.support.GenericWebApplicationContext@9ec531, started on Tue Jun 21 22:16:20 IST 2022
+2022-06-21 22:16:27,228 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 22:16:27,231 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Shutdown initiated...
+2022-06-21 22:16:27,242 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       - HikariPool-1 - Shutdown completed.
