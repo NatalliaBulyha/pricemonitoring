@@ -65,7 +65,7 @@ public class PriceServiceImpl implements PriceService {
 
     @Override
     public List<PriceAdminDto> getByShopId(Long shopId) {
-        List<Price> price = priceDao.findAllByShopId(shopId);
+        List<Price> price = priceDao.findAllByShopIdAndStatus(shopId, PricesStatusEnum.ACTUAL);
         if (price.isEmpty()) {
             LOG.warning(String.format("Prices with shopId = %s is not found", shopId));
             throw new EntityNotFoundException(String.format("Prices with shopId = %s is not found", shopId));

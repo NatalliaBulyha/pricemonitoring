@@ -109,7 +109,7 @@ public class ShopServiceImpl implements ShopService {
     @Transactional
     @Override
     public List<ShopAdminDto> getByAddressAdmin(String address) {
-        List<Shop> shop = shopDao.findAllByAddressContains(address);
+        List<Shop> shop = shopDao.findShopsByAddressContainsAndStatus(address, EntityStatusEnum.ACTUAL);
         if (shop.isEmpty()) {
             LOG.warning(String.format("Shop with address = %s is not found", address));
             throw new EntityNotFoundException(String.format("Shop with address = %s is not found", address));
@@ -164,7 +164,7 @@ public class ShopServiceImpl implements ShopService {
     @Transactional
     @Override
     public List<ShopAdminDto> getShopListByStatus(String status) {
-        List<ShopAdminDto> shopAdminDtos = mapper.getShopListToShopAdminDtoList(shopDao.findShopsByStatus(EntityStatusEnum.valueOf(status.toUpperCase())));
+        List<ShopAdminDto> shopAdminDtos = mapper.getShopListToShopAdminDtoListAdmin(shopDao.findShopsByStatus(EntityStatusEnum.valueOf(status.toUpperCase())));
         if (shopAdminDtos.isEmpty()) {
             LOG.warning(String.format("Shops list with status = %s is not found", status));
             throw new EntityNotFoundException(String.format("Shops list with status = %s is not found", status));
@@ -175,7 +175,7 @@ public class ShopServiceImpl implements ShopService {
     @Transactional
     @Override
     public List<ShopAdminDto> getAllAdmin() {
-        List<ShopAdminDto> shopAdminDtos = mapper.getShopListToShopAdminDtoList(shopDao.findAll());
+        List<ShopAdminDto> shopAdminDtos = mapper.getShopListToShopAdminDtoListAdmin(shopDao.findShopsByStatus(EntityStatusEnum.ACTUAL));
         if (shopAdminDtos.isEmpty()) {
             LOG.warning("Shops list not found.");
             throw new EntityNotFoundException("Shops list not found.");

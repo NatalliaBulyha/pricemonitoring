@@ -14,7 +14,7 @@ import lombok.Setter;
 public class RatingDto {
 
     private String shopName;
-
+    private String address;
     private String assortment;
     private String qualityOfService;
     private String prices;

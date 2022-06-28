@@ -1,6 +1,7 @@
 package by.senla.training.bulyha.pricemonitoring.mapper;
 
 import by.senla.training.bulyha.pricemonitoring.BrandDao;
+import by.senla.training.bulyha.pricemonitoring.RatingDao;
 import by.senla.training.bulyha.pricemonitoring.entity.Rating;
 import by.senla.training.bulyha.pricemonitoring.entity.Shop;
 import by.senla.training.bulyha.pricemonitoring.enums.EntityStatusEnum;
@@ -20,14 +21,17 @@ import java.util.stream.Collectors;
 @Component
 public class ShopMapper {
 
-    @Autowired
     private BrandDao brandDao;
+    private RatingDao ratingDao;
+
+    @Autowired
+    public ShopMapper(BrandDao brandDao, RatingDao ratingDao) {
+        this.brandDao = brandDao;
+        this.ratingDao = ratingDao;
+    }
 
     public ShopDto getShopToShopDto(Shop shop) {
-        String assortment = Double.toString(shop.getRatingsList().stream().mapToDouble(Rating::getAssortment).average().orElseThrow(IllegalStateException::new));
-        String qualityOfService = Double.toString(shop.getRatingsList().stream().mapToDouble(Rating::getQualityOfService).average().orElseThrow(IllegalStateException::new));
-        String prices = Double.toString(shop.getRatingsList().stream().mapToDouble(Rating::getPrices).average().orElseThrow(IllegalStateException::new));
-
+        Map<String, String> ratingsParametersMap = getMap(ratingDao.findAllByShopIdAndStatus(shop.getId(), EntityStatusEnum.ACTUAL));
         return ShopDto.builder()
                 .type(shop.getType().toString().toLowerCase())
                 .brand(shop.getBrand().getName())
@@ -35,9 +39,9 @@ public class ShopMapper {
                 .contactNumber(shop.getContactNumber())
                 .openTime(shop.getOpenTime().toString())
                 .closeTime(shop.getCloseTime().toString())
-                .assortment(getSubstring(assortment))
-                .qualityOfService(getSubstring(qualityOfService))
-                .prices(getSubstring(prices))
+                .assortment(getSubstring(ratingsParametersMap.get("assortment")))
+                .qualityOfService(getSubstring(ratingsParametersMap.get("qualityOfService")))
+                .prices(getSubstring(ratingsParametersMap.get("prices")))
                 .build();
     }
 
@@ -77,10 +81,26 @@ public class ShopMapper {
     }
 
     public ShopAdminDto getShopToShopAdminDto(Shop shop) {
-        String assortment = Double.toString(shop.getRatingsList().stream().mapToDouble(Rating::getAssortment).average().orElseThrow(IllegalStateException::new));
-        String qualityOfService = Double.toString(shop.getRatingsList().stream().mapToDouble(Rating::getQualityOfService).average().orElseThrow(IllegalStateException::new));
-        String prices = Double.toString(shop.getRatingsList().stream().mapToDouble(Rating::getPrices).average().orElseThrow(IllegalStateException::new));
+        Map<String, String> ratingsParametersMap = getMap(ratingDao.findAllByShopIdAndStatus(shop.getId(), EntityStatusEnum.ACTUAL));
 
+        return buildShopAdminDto(shop, ratingsParametersMap);
+    }
+
+    public List<ShopAdminDto> getShopListToShopAdminDtoList(List<Shop> shopList) {
+        return shopList.stream().map(this::getShopToShopAdminDto).collect(Collectors.toList());
+    }
+
+    public ShopAdminDto getShopToShopAdminDtoAdmin(Shop shop) {
+        Map<String, String> ratingsParametersMap = getMap(ratingDao.findAllByShopId(shop.getId()));
+
+        return buildShopAdminDto(shop, ratingsParametersMap);
+    }
+
+    public List<ShopAdminDto> getShopListToShopAdminDtoListAdmin(List<Shop> shopList) {
+        return shopList.stream().map(this::getShopToShopAdminDtoAdmin).collect(Collectors.toList());
+    }
+
+    private ShopAdminDto buildShopAdminDto(Shop shop, Map<String, String> ratingsParametersMap) {
         return ShopAdminDto.builder()
                 .id(shop.getId())
                 .type(shop.getType().toString())
@@ -90,13 +110,9 @@ public class ShopMapper {
                 .openTime(shop.getOpenTime().toString())
                 .closeTime(shop.getCloseTime().toString())
                 .status(shop.getStatus().toString())
-                .assortment(getSubstring(assortment))
-                .qualityOfService(getSubstring(qualityOfService))
-                .prices(getSubstring(prices))
+                .assortment(getSubstring(ratingsParametersMap.get("assortment")))
+                .qualityOfService(getSubstring(ratingsParametersMap.get("qualityOfService")))
+                .prices(getSubstring(ratingsParametersMap.get("prices")))
                 .build();
-    }
-
-    public List<ShopAdminDto> getShopListToShopAdminDtoList(List<Shop> shopList) {
-        return shopList.stream().map(this::getShopToShopAdminDto).collect(Collectors.toList());
     }
 }

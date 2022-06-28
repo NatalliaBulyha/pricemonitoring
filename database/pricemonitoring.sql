@@ -246,12 +246,12 @@ VALUES ('yogurt','Babushkina krynka','Belarus','130 gr','ACTUAL',1),
 ('Plasticine wax','Cvetik','Russia','6 pieses','ACTUAL',9);
 
 INSERT INTO `users` (`login`,`password`, `last_name`,`first_name`,`registration_date`,`mobile_number`,`email`,`birthday`, `status`)
-VALUES ('anna','$2a$12$JqyaEKjEGydxkF4ILBswYe.PnCHXLaT3fZdbb35LDc2XKnjwrsgry','Крутько','Анна','2022-04-29','+375 (29) 453-23-30','fwu@yandex.ru','1988-07-20','ACTUAL'),
-('lena','$2a$12$dTWkMUKXphYSQyuDe2nkluzlNaYHQOofGkllT.vCuiX8fdc45/eVy','Евтухова','Елена','2022-05-12','+375 (33) 483-22-09','evalena@gmail.com','1998-12-02','ACTUAL'),
-('genka','$2a$12$4lWIdkpWsVqGgIc.Y2F7nObJ6wVVEeTOgcCEs2MhjKnqH7Xcfi0Dq','Любенчук','Гена','2022-05-15','+375 (29) 812-11-90','genka86@yandex.ru','1986-09-19','ACTUAL'),
-('egor','$2a$12$2mhJwXLuUjJOelcAMmJ8fem78s/GpgMBNbIc76PSl47HIN3K6ask.','Печик','Егор','2022-05-16','+375 (33) 732-32-44','edik20@gmail.com','1993-07-05','ACTUAL'),
-('natasha','$2a$12$4Zag4kw.QvjAhHODqs3WyePZvDBXGzeKJlC/F10ozyJqbFZGHZBSy','Печик','Наталья','2022-05-16','+375 (29) 823-43-37','pechiknastja@gmail.com','1994-05-17','ACTUAL'),
-('admin','$2a$12$stUkDsV2XTWZOjtcyo2iBOj34L8HWRoWVUwVgBw7CVfAtR4xdFTdm','Горчук','Андрей','2022-04-28','+375 (29) 564-45-39','gorinich@gmail.com','1996-09-02','ACTUAL');
+VALUES ('anna','$2a$12$JqyaEKjEGydxkF4ILBswYe.PnCHXLaT3fZdbb35LDc2XKnjwrsgry','Krutko','Anna','2022-04-29','+375 (29) 453-23-30','fwu@yandex.ru','1988-07-20','ACTUAL'),
+('lena','$2a$12$dTWkMUKXphYSQyuDe2nkluzlNaYHQOofGkllT.vCuiX8fdc45/eVy','Evtuhova','Elena','2022-05-12','+375 (33) 483-22-09','evalena@gmail.com','1998-12-02','ACTUAL'),
+('genka','$2a$12$4lWIdkpWsVqGgIc.Y2F7nObJ6wVVEeTOgcCEs2MhjKnqH7Xcfi0Dq','Lubenchuk','Gena','2022-05-15','+375 (29) 812-11-90','genka86@yandex.ru','1986-09-19','ACTUAL'),
+('egor','$2a$12$2mhJwXLuUjJOelcAMmJ8fem78s/GpgMBNbIc76PSl47HIN3K6ask.','Pechik','Egor','2022-05-16','+375 (33) 732-32-44','edik20@gmail.com','1993-07-05','ACTUAL'),
+('natasha','$2a$12$4Zag4kw.QvjAhHODqs3WyePZvDBXGzeKJlC/F10ozyJqbFZGHZBSy','Pechik','Natasha','2022-05-16','+375 (29) 823-43-37','pechiknastja@gmail.com','1994-05-17','ACTUAL'),
+('admin','$2a$12$stUkDsV2XTWZOjtcyo2iBOj34L8HWRoWVUwVgBw7CVfAtR4xdFTdm','Gordon','Andry','2022-04-28','+375 (29) 564-45-39','gorinich@gmail.com','1996-09-02','ACTUAL');
 
 INSERT INTO `prices` (`date`,`price`,`status`,`goods_id`,`shops_id`,`users_id`)
 VALUES ('2022-04-28',0.94,'HISTORY',1,1,6),

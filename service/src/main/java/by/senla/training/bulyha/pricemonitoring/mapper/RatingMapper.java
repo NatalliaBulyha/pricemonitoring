@@ -48,6 +48,7 @@ public class RatingMapper {
 
         return RatingDto.builder()
                 .shopName(ratings.get(0).getShop().getBrand().getName())
+                .address(ratings.get(0).getShop().getAddress())
                 .assortment(getSubstring(assortment))
                 .qualityOfService(getSubstring(qualityOfService))
                 .prices(getSubstring(prices))

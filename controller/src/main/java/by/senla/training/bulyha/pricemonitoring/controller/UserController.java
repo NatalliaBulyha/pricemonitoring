@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -43,7 +44,7 @@ public class UserController {
     @Operation(summary = "deleted user",
             description = "method changes status of user from actual to deleted. " +
             "admin can delete any user and user can delete only himself.")
-    @PostMapping("/status")
+    @PutMapping("/status")
     public UserDto updateUserStatus(@RequestParam @Min(1) Long id) {
         UserDto userDto = userService.updateUserStatus(id);
         LOG.info(String.format("User with id = %s was deleted", id));
@@ -53,7 +54,7 @@ public class UserController {
     @Operation(summary = "update user",
             description = "method updates user. userId is necessarily; lastName, firstName, mobileNumber, email - are " +
                     "no necessarily, only what will be change; mobileNumber mast be in +375(33) 123-45-67")
-    @PostMapping("/editing")
+    @PutMapping("/editing")
     public UserResponseUpdateDto updateUser(@RequestParam @Min(1) Long userId,
                                             @RequestParam(required = false) String lastName,
                                             @RequestParam(required = false) String firstName,
@@ -101,7 +102,7 @@ public class UserController {
     @Operation(summary = "add admin role",
             description = "admin adds admin role to the user. user id - 1 anna, 2 lena, 3 genka, 4 egor, 5 natasha, 6 admin")
     @Secured({"ROLE_ADMIN"})
-    @PostMapping("/role")
+    @PutMapping("/role")
     public UserRoleAdminDto addAdminRole(@RequestParam @Min(1) Long id) {
         UserRoleAdminDto userDto = userService.addAdminRole(id);
         LOG.info(String.format("User with id = %s added role admin.", id));

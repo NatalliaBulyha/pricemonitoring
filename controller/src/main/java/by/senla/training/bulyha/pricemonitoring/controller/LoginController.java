@@ -1,6 +1,7 @@
 package by.senla.training.bulyha.pricemonitoring.controller;
 
 import by.senla.training.bulyha.pricemonitoring.entity.User;
+import by.senla.training.bulyha.pricemonitoring.enums.EntityStatusEnum;
 import by.senla.training.bulyha.pricemonitoring.security.JwtProvider;
 import by.senla.training.bulyha.pricemonitoring.service.TokenService;
 import by.senla.training.bulyha.pricemonitoring.service.UserService;
@@ -55,6 +56,10 @@ public class LoginController {
         if (userService.existUserByLogin(userLoginDto.getLogin())) {
 
             User user = userService.findByLogin(userLoginDto.getLogin());
+            if (user.getStatus().equals(EntityStatusEnum.DELETED)) {
+                LOG.info("Incorrect login or password!");
+                return ResponseEntity.badRequest().body("Incorrect login or password!");
+            }
             if (bCryptPasswordEncoder.matches(userLoginDto.getPassword(), user.getPassword())) {
                 final Authentication authentication = authenticationManager.authenticate(
                         new UsernamePasswordAuthenticationToken(

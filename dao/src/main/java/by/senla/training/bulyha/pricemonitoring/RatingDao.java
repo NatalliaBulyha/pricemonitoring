@@ -11,4 +11,6 @@ import java.util.List;
 public interface RatingDao extends JpaRepository<Rating, Long> {
 
     List<Rating> findAllByShopIdAndStatus(Long shopId, EntityStatusEnum status);
+
+    List<Rating> findAllByShopId(Long shopId);
 }

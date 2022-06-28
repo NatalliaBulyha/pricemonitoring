@@ -17,10 +17,7 @@ public interface ShopDao extends JpaRepository<Shop, Long>, JpaSpecificationExec
 
     List<Shop> findShopByBrandId(Long brandId);
 
-    /*@Query(value = "SELECT s FROM Shop s WHERE s.address LIKE %:address% ")*/
     List<Shop> findShopsByAddressContainsAndStatus(String address, EntityStatusEnum status);
-
-    List<Shop> findAllByAddressContains(String address);
 
     Shop findShopByBrandIdAndAddress(Long brandId, String address);
 

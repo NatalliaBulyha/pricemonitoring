@@ -54,7 +54,6 @@ public class PriceController {
 
     @Operation(summary = "get price by shop id",
             description = "method returns list of prices with all info by shop id.")
-    @Secured({"ROLE_ADMIN"})
     @GetMapping("/list")
     public List<PriceAdminDto> getByShopId(@RequestParam @Min(1) Long shopId) {
         return priceService.getByShopId(shopId);

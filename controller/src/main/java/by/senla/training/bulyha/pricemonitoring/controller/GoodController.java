@@ -15,6 +15,7 @@ import org.springframework.security.access.annotation.Secured;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -152,7 +153,7 @@ public class GoodController {
             description = "method changes status of good from actual to deleted. " +
             "Status of the prices of this good also changes.")
     @Secured({"ROLE_ADMIN"})
-    @PostMapping("/removal")
+    @PutMapping("/removal")
     public GoodAdminDto updateGoodStatus(@RequestParam @Min(1) Long goodId) {
         GoodAdminDto goodAdminDto = goodService.updateGoodStatus(goodId);
         LOG.info(String.format("Good with id = %s was deleted.", goodId));
@@ -163,7 +164,7 @@ public class GoodController {
             description = "method updates good; goodId is necessarily; name, producer, country, " +
             "description, subcategoryId - are no necessarily, only what will be change.")
     @Secured({"ROLE_ADMIN"})
-    @PostMapping("/editing")
+    @PutMapping("/editing")
     public GoodUpdateDto updateGood(@RequestParam @Min(1) Long goodId,
                                     @RequestParam(required = false) String name,
                                     @RequestParam(required = false) String producer,

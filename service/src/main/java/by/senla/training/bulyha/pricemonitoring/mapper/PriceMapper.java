@@ -137,7 +137,7 @@ public class PriceMapper {
                 .goodName(price.getGood().getName())
                 .shopId(price.getShop().getId())
                 .shopName(price.getShop().getBrand().getName())
-                .userId(price.getId())
+                .userId(price.getUser().getId())
                 .userLastName(price.getUser().getLastName())
                 .userFirstName(price.getUser().getFirstName())
                 .build();
